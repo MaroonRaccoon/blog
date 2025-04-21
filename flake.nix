@@ -14,6 +14,8 @@
       node = pkgs.nodePackages_latest;
       buildInputs = with pkgs; [
         node.mathjax
+        python3Packages.python
+        vscode-langservers-extracted
       ];
     in
     {

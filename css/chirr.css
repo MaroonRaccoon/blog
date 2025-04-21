@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.main-content {
+    width: min(800px, 60%);
+    margin: auto;
+    background-color: #333;
+    padding: 50px;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+theorem {
+    font-style: italic;
+    display: block;
+    padding-bottom: 10px;
+    background-color: #282828;
+    padding: 15px;
+    border-style: ridge;
+    border-width: 0 0 5px 0;
+    border-color: #444;
+}
+theorem::before {
+    content: "Theorem. ";
+    font-style: normal;
+    font-weight: bold;
+}
+
+proof {
+    display: block;
+    background-color: #282828;
+    padding: 15px;
+}
+proof::before {
+    content: "Proof. ";
+    font-style: normal;
+    font-weight: bold;
+}
+proof::after {
+    content: "□";
+    font-style: normal;
+    font-weight: bold;
+}
+

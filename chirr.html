@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+        <title>math</title>
+        <script>
+            MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+        </script>
+        <script type='text/javascript' 
+                id='MathJax-script' 
+                async 
+                src='./mathjax/tex-mml-chtml.js'>
+        </script>
+        <link rel='stylesheet' href='./css/chirr.css'>
+    </head>
+    <body>
+        <div class='main-content'>
+            <h1>Article title</h1>
+            This is an example article.
+            <h2>An theorem</h2>
+            <p>Here we prove an theorem. Wag!!</p>
+            <theorem> Let $n\in\mathbb{N}$. There is exactly one $n$-element subgroup of $SO(2).$ </theorem>
+            <proof>
+            Let $G_n$ be an $n$-element subgroup of $SO(2)$, and define
+            $$H_n = \left\{
+                \mathrm{exp}\left(
+                    {i\cdot\frac{2\pi k}{n}}
+                \right)
+                :
+                k\in\mathbb{Z}
+            \right\}.$$
+            We will prove that $G_n = H_n$.
+
+            <p> Suppose $z\in G_n$. Then, by Lagrange's theorem, we know that $z^n = 1$. From this, we find $|z|=1$, and taking $\theta=\mathrm{arg}(z)$, we have $n\theta = 2\pi k$ for some $k\in\mathbb{Z}$, i.e. $\theta = \displaystyle\frac{2\pi k}{n}$ for some $k\in\mathbb{Z}$. Hence $z\in H_n$, so $G_n \subseteq H_n$. But $|H_n| = n = |G_n|$, and so $G_n = H_n$, completing the proof.</p>
+            </proof>
+
+            <p>This is after the proof.</p>
+        </div>
+    </body>
+</html>
+
